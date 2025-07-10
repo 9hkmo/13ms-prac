@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  .contents {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 100px 0 50px 0;
+    h1 {
+      margin-bottom: 30px;
+    }
+    .lists {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid gray;
+      background-color: white;
+      .list {
+        &:hover {
+          cursor: pointer;
+        }
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        border: 0.5px solid gray;
+        .listContent {
+          display: flex;
+          flex: 1;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+
+  .pagebar {
+    display: flex;
+    .pageNumber {
+      padding: 10px;
+      font-weight: bold;
+    }
+  }
+}

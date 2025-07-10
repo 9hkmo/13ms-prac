@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  min-width: 70vw;
+  padding: 100px 0;
+  .header {
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid gray;
+    .titleBox {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 20px;
+      padding-bottom: 20px;
+      .title {
+        font-size: 30px;
+      }
+    }
+  }
+  .contents {
+    min-height: 70vh;
+  }
+  .button {
+    background-color: green;
+    width: fit-content;
+    padding: 20px 150px;
+  }
+}

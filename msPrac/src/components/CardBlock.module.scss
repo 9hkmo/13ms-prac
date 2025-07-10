@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    padding: 20px;
+    flex: 1;
+  }
+}
+.isLeft {
+  flex-direction: row-reverse;
+}

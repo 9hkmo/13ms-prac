@@ -1,0 +1,14 @@
+.button {
+  padding: 10px;
+  border-radius: 40px;
+  background-color: whitesmoke;
+  color: gray;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.click {
+  background-color: rgb(217, 0, 255);
+  color: white;
+}
