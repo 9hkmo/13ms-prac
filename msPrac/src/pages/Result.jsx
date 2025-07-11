@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "../components/Button";
 import styles from "../styles/pages/result.module.scss";
 
 export const Result = () => {
   const [isSelect, setIsSelect] = useState([]);
+
+  useEffect(() => {
+    console.log(isSelect);
+  }, [isSelect]);
 
   return (
     <div className={styles.container}>

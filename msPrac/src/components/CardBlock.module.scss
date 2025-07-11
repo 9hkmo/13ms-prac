@@ -2,11 +2,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  img {
-    padding: 20px;
+  height: 38vh;
+
+  .imgbx {
+    padding: 40px;
     flex: 1;
+    background-color: rgb(200, 200, 200);
+    width: 100%;
+    height: 100%;
+    img {
+      flex: 1;
+      height: 100%;
+    }
   }
 }
 .isLeft {
   flex-direction: row-reverse;
+  .imgbx {
+    padding: 40px 0 40px 80px;
+  }
 }

@@ -6,7 +6,7 @@ export const Button = ({ text, isSelect, setIsSelect }) => {
 
   const buttonClick = () => {
     setIsClick(!isClick);
-    if (!isSelect.include(text)) setIsSelect([...isSelect, text]);
+    if (isClick) setIsSelect([...isSelect, text]);
     else setIsSelect(isSelect.filter((i) => i != text));
   };
 

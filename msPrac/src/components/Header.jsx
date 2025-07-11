@@ -1,16 +1,54 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./Header.module.scss";
+import { useState } from "react";
 
 export const Header = () => {
+  const [choice, setChoice] = useState(null);
   const nav = useNavigate();
+
+  const choiceClick = (item) => {
+    setChoice(item);
+    nav(`/${item}`);
+  };
 
   return (
     <div className={styles.container}>
-      <p onClick={() => nav("/")}>홈</p>
-      <p onClick={() => nav("/notice")}>공지사항</p>
-      <p onClick={() => nav("/notice")}>내 계약서 검토</p>
-      <p onClick={() => nav("/notice")}>내 근로정리</p>
-      <p onClick={() => nav("/notice")}>네면 햔딥</p>
+      <div className={styles.contents}>
+        <div className={styles.logo}>LOGO</div>
+        <div className={styles.navBox}>
+          <p
+            onClick={() => choiceClick("")}
+            className={`${choice == "" && styles.here}`}
+          >
+            홈
+          </p>
+          <p
+            onClick={() => choiceClick("notice")}
+            className={`${choice == "notice" && styles.here}`}
+          >
+            공지사항
+          </p>
+          <p
+            onClick={() => choiceClick("test")}
+            className={`${choice == "test" && styles.here}`}
+          >
+            내 계약서 검토
+          </p>
+          <p
+            onClick={() => choiceClick("test")}
+            className={`${choice == "test" && styles.here}`}
+          >
+            내 근로정리
+          </p>
+          <p
+            onClick={() => choiceClick("test")}
+            className={`${choice == "test" && styles.here}`}
+          >
+            네면 햔딥
+          </p>
+        </div>
+        <div className={styles.login}>LOGIN</div>
+      </div>
     </div>
   );
 };

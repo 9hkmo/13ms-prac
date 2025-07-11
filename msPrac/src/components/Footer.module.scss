@@ -1,9 +1,59 @@
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
-
-  padding: 20px;
   background-color: white;
+
+  .topContents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 58vw;
+    padding: 20px 0;
+    .navBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      p {
+        padding-right: 20px;
+        border-right: 1px solid black;
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+    .iconBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  .bottomContents {
+    width: 100vw;
+    padding: 40px 21vw;
+    display: flex;
+    border-top: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+    .info {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        margin-bottom: 10px;
+      }
+      p {
+        color: gray;
+      }
+    }
+    .rightBox {
+      display: flex;
+      flex-direction: column;
+      h2 {
+      }
+    }
+  }
 }
