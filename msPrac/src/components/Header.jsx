@@ -41,10 +41,10 @@ export const Header = () => {
             내 근로정리
           </p>
           <p
-            onClick={() => choiceClick("test")}
-            className={`${choice == "test" && styles.here}`}
+            onClick={() => choiceClick("community")}
+            className={`${choice == "community" && styles.here}`}
           >
-            네면 햔딥
+            네편 현답
           </p>
         </div>
         <div className={styles.login}>LOGIN</div>

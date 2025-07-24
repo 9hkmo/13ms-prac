@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  max-width: 58vw;
+  padding: 50px 0;
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 40px;
+    width: 100%;
+    .postContent {
+      display: flex;
+      flex-direction: column;
+      .header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .resultContent {
+        margin-top: 30px;
+        padding: 40px;
+        box-shadow: 0 0 5px rgb(194, 194, 194);
+        h2 {
+          margin-bottom: 20px;
+        }
+        .optionList {
+          margin-top: 20px;
+          padding: 20px 0;
+          border-top: 1px solid gray;
+          .buttonBox {
+            display: flex;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+  .middleContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .star {
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      padding: 10px;
+    }
+    .listButton {
+      border: none;
+      padding: 10px;
+      color: black;
+      background-color: rgb(193, 193, 193);
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .commentContent {
+    display: flex;
+  }
+}
